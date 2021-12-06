@@ -18,5 +18,10 @@ public class ProdottoService {
 
     public void insert(Prodotto p){ prodottoRep.save(p);}
 
+    public void insertAll(List<Prodotto> lp){
+        prodottoRep.saveAll(lp);
+    }
+
+
 
 }

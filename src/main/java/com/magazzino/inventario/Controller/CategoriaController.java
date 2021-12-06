@@ -28,4 +28,9 @@ public class CategoriaController {
         categoriaSer.insert(c);
     }
 
+    @PostMapping("/categoria/insert/array")
+    public void insMultCategoria(@RequestBody List<Categoria> c){
+        categoriaSer.insertAll(c);
+    }
+
 }

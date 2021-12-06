@@ -30,5 +30,10 @@ public class ProdottoController {
         prodottoServ.insert(p);
     }
 
+    @PostMapping("/prodotto/insert/array")
+    public void insMultProdotto(@RequestBody List<Prodotto> p){
+        prodottoServ.insertAll(p);
+    }
+
 
 }

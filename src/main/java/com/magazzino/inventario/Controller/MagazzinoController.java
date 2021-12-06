@@ -29,6 +29,9 @@ public class MagazzinoController {
         magazzinoServ.insert(m);
     }
 
-
+    @PostMapping("/magazzino/insert/array")
+    public void insMultMagazzino(@RequestBody List<Magazzino> m){
+        magazzinoServ.insertAll(m);
+    }
 
 }

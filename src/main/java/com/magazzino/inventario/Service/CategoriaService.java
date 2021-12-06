@@ -23,4 +23,8 @@ public class CategoriaService {
     public void insert(Categoria c){
         categoriaRep.save(c);
     }
+
+    public void insertAll(List<Categoria> lc){
+        categoriaRep.saveAll(lc);
+    }
 }

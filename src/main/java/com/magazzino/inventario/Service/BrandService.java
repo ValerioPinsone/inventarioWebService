@@ -24,4 +24,8 @@ public class BrandService {
         brandRep.save(b);
     }
 
+    public void insertAll(List<Brand> lb){
+        brandRep.saveAll(lb);
+    }
+
 }

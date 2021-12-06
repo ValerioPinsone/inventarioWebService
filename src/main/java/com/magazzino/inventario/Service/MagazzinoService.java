@@ -23,4 +23,8 @@ public class MagazzinoService {
     public void insert(Magazzino m){
         magazzinoRep.save(m);
     }
+
+    public void insertAll(List<Magazzino> lm){
+        magazzinoRep.saveAll(lm);
+    }
 }

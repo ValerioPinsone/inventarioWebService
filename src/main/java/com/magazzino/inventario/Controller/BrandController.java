@@ -27,4 +27,9 @@ public class BrandController {
     public void insBrand(@RequestBody Brand b){
         brandSer.insert(b);
     }
+
+    @PostMapping("/brand/insert/array")
+    public void insMultBrand(@RequestBody List<Brand> b){
+        brandSer.insertAll(b);
+    }
 }
