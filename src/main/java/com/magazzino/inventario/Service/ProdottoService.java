@@ -13,4 +13,10 @@ public class ProdottoService {
     ProdottoRepository prodottoRep;
 
     public List<Prodotto> getAll() { return prodottoRep.findAll(); }
+
+    public Prodotto getById(int id){ return prodottoRep.findById(id).orElse(new Prodotto());  }
+
+    public void insert(Prodotto p){ prodottoRep.save(p);}
+
+
 }
