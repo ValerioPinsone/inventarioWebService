@@ -20,7 +20,6 @@ public class ProdottoService {
 
     public void insertAll(List<Prodotto> lp){
         prodottoRep.saveAll(lp);
-		System.out.println("salvato");
     }
 
 
